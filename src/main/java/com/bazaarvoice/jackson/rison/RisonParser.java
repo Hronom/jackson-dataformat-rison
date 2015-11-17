@@ -31,6 +31,39 @@ import java.io.Writer;
 public class RisonParser
         extends ParserBase
 {
+    protected final static int INT_0 = '0';
+    protected final static int INT_1 = '1';
+    protected final static int INT_2 = '2';
+    protected final static int INT_3 = '3';
+    protected final static int INT_4 = '4';
+    protected final static int INT_5 = '5';
+    protected final static int INT_6 = '6';
+    protected final static int INT_7 = '7';
+    protected final static int INT_8 = '8';
+    protected final static int INT_9 = '9';
+    protected final static int INT_MINUS = '-';
+    protected final static int INT_PLUS = '+';
+    protected final static int INT_DECIMAL_POINT = '.';
+    protected final static int INT_e = 'e';
+    protected final static int INT_E = 'E';
+    protected final static int INT_LBRACKET = '[';
+    protected final static int INT_RBRACKET = ']';
+    protected final static int INT_LCURLY = '{';
+    protected final static int INT_RCURLY = '}';
+    protected final static int INT_QUOTE = '"';
+    protected final static int INT_BACKSLASH = '\\';
+    protected final static int INT_SLASH = '/';
+    protected final static int INT_COLON = ':';
+    protected final static int INT_COMMA = ',';
+    protected final static int INT_ASTERISK = '*';
+    protected final static int INT_APOSTROPHE = '\'';
+    protected final static int INT_b = 'b';
+    protected final static int INT_f = 'f';
+    protected final static int INT_n = 'n';
+    protected final static int INT_r = 'r';
+    protected final static int INT_t = 't';
+    protected final static int INT_u = 'u';
+
     /**
      * Enumeration that defines all configurable features for Rison parsers.
      */
