@@ -12,6 +12,7 @@
     <name>Rison data format</name>
     <description>Jackson parser support for the Rison data format</description>
     <url>https://github.com/Hronom/jackson-dataformat-rison</url>
+    
     <licenses>
         <license>
             <name>Apache License 2.0</name>

@@ -16,7 +16,7 @@ This version combined from [maximaleshko/rison] (https://github.com/maximaleshko
 Description
 -----
 
-A plugin for the [Jackson streaming JSON processor v2.7.x] (http://wiki.fasterxml.com/JacksonHome)
+A plugin for the [Jackson JSON Processor] (http://wiki.fasterxml.com/JacksonHome)
 that adds support for reading and writing JSON objects in the [Rison] (https://github.com/Nanonid/rison)
 serialization format.
 
