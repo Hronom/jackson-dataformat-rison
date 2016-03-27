@@ -4,6 +4,8 @@
 Rison Parser and Generator for Jackson
 ======================================
 
+[![Join the chat at https://gitter.im/Hronom/jackson-dataformat-rison](https://badges.gitter.im/Hronom/jackson-dataformat-rison.svg)](https://gitter.im/Hronom/jackson-dataformat-rison?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Introduction
 -----
 
