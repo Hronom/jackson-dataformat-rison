@@ -12,9 +12,11 @@ Introduction
 Alive version of project [bazaarvoice/rison] (https://github.com/bazaarvoice/rison) that supports
  latest version of Jackson (2.7.x).
 
-This version combined from [maximaleshko/rison] (https://github.com/maximaleshko/rison) and solution
- from issue [Not compatible with latest version of Jackson] (https://github.com/bazaarvoice/rison/issues/5#issuecomment-144750890)
+This version is a mix of fork [maximaleshko/rison] (https://github.com/maximaleshko/rison) and
+solution from issue [Not compatible with latest version of Jackson] (https://github.com/bazaarvoice/rison/issues/5#issuecomment-144750890)
  suggested by user [fakeh] (https://github.com/fakeh)
+
+**This project needs your help! Feel free to contribute!**
 
 Description
 -----
