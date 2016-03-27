@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Hronom/jackson-dataformat-rison.svg?branch=master)](https://travis-ci.org/Hronom/jackson-dataformat-rison)
+
 Rison Parser and Generator for Jackson
 ======================================
 
