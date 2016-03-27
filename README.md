@@ -1,10 +1,9 @@
 [![Build Status](https://travis-ci.org/Hronom/jackson-dataformat-rison.svg?branch=master)](https://travis-ci.org/Hronom/jackson-dataformat-rison)
 [![Dependency Status](https://www.versioneye.com/user/projects/56f820c135630e0029db09a9/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56f820c135630e0029db09a9)
+[![Join the chat at https://gitter.im/Hronom/jackson-dataformat-rison](https://badges.gitter.im/Hronom/jackson-dataformat-rison.svg)](https://gitter.im/Hronom/jackson-dataformat-rison?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Rison Parser and Generator for Jackson
 ======================================
-
-[![Join the chat at https://gitter.im/Hronom/jackson-dataformat-rison](https://badges.gitter.im/Hronom/jackson-dataformat-rison.svg)](https://gitter.im/Hronom/jackson-dataformat-rison?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Introduction
 -----
