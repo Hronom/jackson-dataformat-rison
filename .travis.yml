@@ -1,1 +1,32 @@
 language: java
+jdk: oraclejdk8
+
+before_install:
+  - sudo apt-get update -y
+  - sudo apt-get install -y python-software-properties build-essential
+  - sudo apt-get install -y libgd2-xpm ia32-libs ia32-libs-multiarch
+  - sudo pip install codecov
+
+env:
+  global:
+   - APP_VERSION=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive org.codehaus.mojo:exec-maven-plugin:1.4.0:exec)
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/c451e6d493348e9f4ac2
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false
+
+after_success:
+  - codecov
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file:
+       - "dist/jackson-dataformat-rison-$APP_VERSION-bin.zip"
+  skip_cleanup: true
+  on:
+    tags: true

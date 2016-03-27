@@ -1,7 +1,8 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

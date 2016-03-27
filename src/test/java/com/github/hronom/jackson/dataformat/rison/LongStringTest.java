@@ -1,6 +1,7 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -9,7 +10,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Random;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 
 public class LongStringTest {
 

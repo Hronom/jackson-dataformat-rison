@@ -1,11 +1,4 @@
-/*
-Large portions of this file are copyright by the authors of Jackson under the Apache 2.0 or LGPL license.
-
-The implementation was derived from the Jackson class 'org.codehaus.jackson.impl.WriterBasedGenerator' and
-modified for Rison.
-*/
-
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.core.Base64Variant;
 import com.fasterxml.jackson.core.JsonGenerationException;

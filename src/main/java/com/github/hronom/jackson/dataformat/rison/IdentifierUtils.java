@@ -1,4 +1,4 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 /**
  * Utilities for dealing with Rison unquoted identifiers.
@@ -7,15 +7,16 @@ class IdentifierUtils {
 
     // Ascii idstart and idchar that match the rison spec precisely.  non-ascii (>127) are also allowed.
     private static final int[] _idStartStrict = toIdSet(true, "_./~");
-    private static final int[] _idCharStrict =  toIdSet(true, "_./~-0123456789");
+    private static final int[] _idCharStrict = toIdSet(true, "_./~-0123456789");
 
     // Lenient idstart and idchar that accept strings encoded by http://mjtemplate.org/dist/mjt-0.9.2/rison.js
     // which allows a number of punctuation and whitespace characters that are excluded in the Rison spec.
     private static final int[] _idStartLenient = invert(toIdSet(false, " '!:(),*@$-0123456789"));
-    private static final int[] _idCharLenient =  invert(toIdSet(false, " '!:(),*@$"));
+    private static final int[] _idCharLenient = invert(toIdSet(false, " '!:(),*@$"));
 
     /**
-     * Returns true if the specified character is a legal first character in an unquoted identifier.
+     * Returns true if the specified character is a legal first character in an unquoted
+     * identifier.
      * Uses lenient rules appropriate for parsing.
      */
     public static boolean isIdStartLenient(int ch) {
@@ -23,7 +24,8 @@ class IdentifierUtils {
     }
 
     /**
-     * Returns true if the specified character is a legal following character in an unquoted identifier.
+     * Returns true if the specified character is a legal following character in an unquoted
+     * identifier.
      * Uses lenient rules appropriate for parsing.
      */
     public static boolean isIdCharLenient(int ch) {
@@ -31,7 +33,8 @@ class IdentifierUtils {
     }
 
     /**
-     * Returns true if the specified character is a legal first character in an unquoted identifier.
+     * Returns true if the specified character is a legal first character in an unquoted
+     * identifier.
      * Uses the strict definition described in the Rison specification, appropriate for encoding.
      */
     public static boolean isIdStartStrict(int ch) {
@@ -39,7 +42,8 @@ class IdentifierUtils {
     }
 
     /**
-     * Returns true if the specified character is a legal following character in an unquoted identifier.
+     * Returns true if the specified character is a legal following character in an unquoted
+     * identifier.
      * Uses the strict definition described in the Rison specification, appropriate for encoding.
      */
     public static boolean isIdCharStrict(int ch) {

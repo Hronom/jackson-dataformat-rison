@@ -1,7 +1,8 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.testng.annotations.Test;
 
 import java.io.IOException;

@@ -1,7 +1,8 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.Versioned;
+
 import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -21,10 +22,10 @@ public class VersionTest {
 
     private void assertVersion(Versioned versioned) {
         Version version = versioned.version();
-        assertFalse(version.isUknownVersion(), "Should find version information (got " + version + ")");
+        assertFalse(version.isUnknownVersion(), "Should find version information (got " + version + ")");
         assertEquals(version.getMajorVersion(), 2);
-        assertEquals(version.getMinorVersion(), 6);
-        assertEquals(version.getGroupId(), "com.bazaarvoice.jackson");
-        assertEquals(version.getArtifactId(), "rison");
+        assertEquals(version.getMinorVersion(), 7);
+        assertEquals(version.getGroupId(), "com.github.hronom");
+        assertEquals(version.getArtifactId(), "jackson-dataformat-rison");
     }
 }

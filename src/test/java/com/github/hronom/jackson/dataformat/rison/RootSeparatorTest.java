@@ -1,6 +1,7 @@
-package com.bazaarvoice.jackson.rison;
+package com.github.hronom.jackson.dataformat.rison;
 
 import com.fasterxml.jackson.core.JsonGenerator;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
