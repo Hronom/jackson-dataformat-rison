@@ -9,8 +9,8 @@
     <version>2.7.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Rison data format</name>
-    <description>Jackson parser support for the Rison data format</description>
+    <name>Jackson-dataformat-Rison</name>
+    <description>Support for reading and writing Rison-encoded data via Jackson abstractions.</description>
     <url>https://github.com/Hronom/jackson-dataformat-rison</url>
 
     <licenses>
