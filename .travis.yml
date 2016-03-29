@@ -21,12 +21,3 @@ notifications:
 
 after_success:
   - codecov
-
-deploy:
-  provider: releases
-  api_key: $GITHUB_TOKEN
-  file:
-       - "dist/jackson-dataformat-rison-$APP_VERSION-bin.zip"
-  skip_cleanup: true
-  on:
-    tags: true
