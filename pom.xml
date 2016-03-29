@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.hronom</groupId>
     <artifactId>jackson-dataformat-rison</artifactId>
-    <version>2.7.3</version>
+    <version>2.7.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Jackson-dataformat-Rison</name>
@@ -23,19 +25,32 @@
         <url>https://github.com/Hronom/jackson-dataformat-rison</url>
         <connection>scm:git:git@github.com:Hronom/jackson-dataformat-rison.git</connection>
         <developerConnection>scm:git:git@github.com:Hronom/jackson-dataformat-rison.git</developerConnection>
-      <tag>v2.7.3</tag>
-  </scm>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jackson.version>2.7.3</jackson.version>
-        <arguments />
+        <arguments/>
     </properties>
 
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
+
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
@@ -51,14 +66,60 @@
             <id>sonatype-oss-release</id>
             <distributionManagement>
                 <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <id>sonatype-nexus-snapshots</id>
+                    <name>Sonatype Nexus Snapshots</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
                 </snapshotRepository>
                 <repository>
-                    <id>ossrh</id>
+                    <id>sonatype-nexus-staging</id>
+                    <name>Nexus Release Repository</name>
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.10.3</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-gpg-plugin</artifactId>-->
+                    <!--<version>1.6</version>-->
+                    <!--<executions>-->
+                    <!--<execution>-->
+                    <!--<id>sign-artifacts</id>-->
+                    <!--<phase>verify</phase>-->
+                    <!--<goals>-->
+                    <!--<goal>sign</goal>-->
+                    <!--</goals>-->
+                    <!--</execution>-->
+                    <!--</executions>-->
+                    <!--</plugin>-->
+                </plugins>
+            </build>
         </profile>
     </profiles>
 
@@ -211,34 +272,6 @@
                         </fileset>
                     </filesets>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.3</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
             <plugin>
