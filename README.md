@@ -31,6 +31,18 @@ Rison expresses the exact same data structures as JSON, but is much more compact
 
 See [Rison] (https://github.com/Nanonid/rison) for more information about Rison.
 
+Maven dependency
+-----
+
+To use in Maven-based projects, use following dependency:
+```xml
+<dependency>
+    <groupId>com.github.hronom</groupId>
+    <artifactId>jackson-dataformat-rison</artifactId>
+    <version>2.7.3</version>
+</dependency>
+```
+
 Usage
 -----
 
