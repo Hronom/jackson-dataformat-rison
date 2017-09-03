@@ -11,7 +11,7 @@ Introduction
 -----
 
 Alive version of project [bazaarvoice/rison] (https://github.com/bazaarvoice/rison) that supports
- latest version of Jackson (2.7.x).
+ latest version of Jackson (2.9.x).
 
 This version is a mix of fork [maximaleshko/rison] (https://github.com/maximaleshko/rison) and
 solution from issue [Not compatible with latest version of Jackson] (https://github.com/bazaarvoice/rison/issues/5#issuecomment-144750890)
@@ -39,7 +39,7 @@ To use in Maven-based projects, use following dependency:
 <dependency>
     <groupId>com.github.hronom</groupId>
     <artifactId>jackson-dataformat-rison</artifactId>
-    <version>2.7.3</version>
+    <version>2.9.0</version>
 </dependency>
 ```
 
