@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.util.VersionUtil;
 
 public final class PackageVersion implements Versioned {
     public final static Version VERSION = VersionUtil
-        .parseVersion("2.7.3", "com.github.hronom", "jackson-dataformat-rison");
+        .parseVersion("2.9.0", "com.github.hronom", "jackson-dataformat-rison");
 
     public Version version() {
         return VERSION;

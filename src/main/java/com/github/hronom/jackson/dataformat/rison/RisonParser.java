@@ -170,7 +170,7 @@ public class RisonParser
 
     @Override
     public Version version() {
-        return ModuleVersion.instance.version();
+        return PackageVersion.VERSION;
     }
 
     /*

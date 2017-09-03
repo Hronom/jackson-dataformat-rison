@@ -24,7 +24,8 @@ public class VersionTest {
         Version version = versioned.version();
         assertFalse(version.isUnknownVersion(), "Should find version information (got " + version + ")");
         assertEquals(version.getMajorVersion(), 2);
-        assertEquals(version.getMinorVersion(), 7);
+        assertEquals(version.getMinorVersion(), 9);
+        assertEquals(version.getPatchLevel(), 0);
         assertEquals(version.getGroupId(), "com.github.hronom");
         assertEquals(version.getArtifactId(), "jackson-dataformat-rison");
     }
